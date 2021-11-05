@@ -234,7 +234,7 @@ function getArtistByIndex(array, number) {
   let result = `the artist at index ${number} is ${artist}`;
   return result;
 }
-
+// console.log(getArtistByIndex(artists, 0));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -258,7 +258,7 @@ function get20s(array) {
   }
   return result;
 }
-console.log(get20s(artists));
+// console.log(get20s(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -323,7 +323,7 @@ function lotsOfArt(array) {
   }
   return artists;
 }
-console.log(lotsOfArt(artists));
+// console.log(lotsOfArt(artists));
 
 /* ***** END OF TASKS ***** */
 
