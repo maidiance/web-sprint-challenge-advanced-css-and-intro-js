@@ -248,17 +248,16 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array) {
   let result = [];
   for(let i = 0; i < array.length; i++){
-    let arrBio = array[i].bio.split(" ");
-    let yearBorn = 0;
-    let yearDied = 0;
-    if(arrBio.indexOf('January') !== -1)
+    let arrBio = array[i].years.split(" - ");
+    let yearBorn = Math.parseInt(arrBio[0]);
+    let yearDied = Math.parseInt(arrBio[1]);
     if(yearBorn >= 1900 && yearDied <= 2000){
       result.push(array[i].name);
     }
   }
   return result;
 }
-
+console.log(get20s(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -298,7 +297,7 @@ function addArtist(array) {
     name: 'Winfired Lu', 
     years: '1989 - 2021',
     genre: 'Web Design', 
-    nationality: 'Asian american'
+    nationality: 'Asian american',
     bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quisque id diam vel quam elementum pulvinar etiam non.',
   };
   array.push(newArtist);
