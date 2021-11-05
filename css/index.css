@@ -158,8 +158,10 @@ button:hover{
         padding: 2%;
     }
     .title-container div {
-        height: 40vh;
+        height: 35vh;
         margin-bottom: 2%;
+        background-repeat: no-repeat;
+        background-size: 250%;
     }
     /* Artists section */
     .artists-container{
