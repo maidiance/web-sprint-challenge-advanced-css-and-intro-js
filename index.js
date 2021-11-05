@@ -231,7 +231,8 @@ Example, if getArtistByIndex is invoked with the artists array and the number 0,
 
 function getArtistByIndex(array, number) {
   let artist = array[number].name;
-  return artist;
+  let result = `the artist at index ${number} is ${artist}`;
+  return result;
 }
 
 
@@ -249,8 +250,8 @@ function get20s(array) {
   let result = [];
   for(let i = 0; i < array.length; i++){
     let arrBio = array[i].years.split(" - ");
-    let yearBorn = Math.parseInt(arrBio[0]);
-    let yearDied = Math.parseInt(arrBio[1]);
+    let yearBorn = parseInt(arrBio[0]);
+    let yearDied = parseInt(arrBio[1]);
     if(yearBorn >= 1900 && yearDied <= 2000){
       result.push(array[i].name);
     }
